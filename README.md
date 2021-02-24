@@ -100,6 +100,59 @@ JavaScript explanation based on my understanding...
  * strict mode tell us that by following this way you can optimize your code and get best chance at performence.
  
  
-  
+ 
+ 
+ 
+
+# JS DOM
+
+### JS platforms :
+* Web browser, web-server, any host etc.
+* Each one provides specification functionality, Js called that Js **Host environment**
+
+### What we have when JS runs :
+* Window -> DOM 
+*        -> BOM -> navigator, screen, location
+*        -> JS -> Array, Function, Events
+* Window : global object for Js and it represents browser window also.
+
+## DOM
+* It represents content of whole page and provide objects to modifie it.
+* **There is CSSOM also, which can be used with DOM to read and write css style, but we rarely use it, we just add/remove css classes.
+
+## BOM
+* It represents additional objects provided by browser to working with everything excepts document.
+* alert, prompt, confirm are also part of BOM
+
+## DOM tree
+* every HTML element is an object.
+* New line and Space in #text node. (check DOM tree on JavaScript.info)
+* Space-only #text node for spaces and new lines.
+* **Autocorrection** If HTML file containes only "HELLO WORLD" browser creats whole DOM tree automaticly.
+* Browser automaticly process eroors : closing tag
+* **Special case**: <table> must have tbody node, and it comes from no-where
+* <!DOCTYPE html> it is also node (Special one)
+* #comment node (see following rule)
+* Document object also a DOM node.
+* There are 12 node types, we usually works with 4.(document, html, tree building nodes, text node, comments)
+* (Select + Esc key and Computed in Elements)
+
+## IF SOMTHING IS IN HTML THEN IT ALSO MUST BE IN DOM TREE
+
+## Walking the DOM
+* document.body
+* document.head
+* document.documentElement
+* In DOM null means doesn't exist.
+* 
+
+
+
+
+
+
+
+
+
   
 
