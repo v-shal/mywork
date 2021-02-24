@@ -112,8 +112,8 @@ JavaScript explanation based on my understanding...
 
 ### What we have when JS runs :
 * Window -> DOM 
-*        -> BOM -> navigator, screen, location
-*        -> JS -> Array, Function, Events
+*           -> BOM -> navigator, screen, location
+*           -> JS -> Array, Function, Events
 * Window : global object for Js and it represents browser window also.
 
 ## DOM
@@ -144,7 +144,21 @@ JavaScript explanation based on my understanding...
 * document.head
 * document.documentElement
 * In DOM null means doesn't exist.
-* 
+* DOM collection are live and read-only
+* do not use for-in loop over collection.(reason?)
+
+### Element only navigation vs Normal navigation
+ * In normal navigation text node and comment node are considerd.
+ * In Element only navigation text and comment nodes are ignored. It only consider element nodes.
+ * for exa. - childNode() and childred()
+ * firstChild() vs firstElementChild()
+ * parentNode() returns any node which is parent.
+ * parentElement() returns parent "element".
+
+## Searching
+ * document.getElementById(), document.querySelectorAll(),etc.
+ * closet(), matches()
+ * .getElementBy*
 
 
 
