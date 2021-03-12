@@ -163,6 +163,12 @@ JavaScript explanation based on my understanding...
 
 
 
+## Array.prototype
+* .forEach() : It executes function for each array element.
+
+
+
+
 
 
 
